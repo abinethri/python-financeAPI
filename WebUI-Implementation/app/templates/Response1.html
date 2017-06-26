@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Page that displays Stock Profile Report</title>
+  <meta charset="UTF-8">
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1> Your Stock Profile Report: </h1>
+
+<table style="width:100%">
+  <tr>
+    <th>Ticker Symbol</th>
+    <td>{{uticksym}}</td>
+  </tr>
+  <tr>
+    <th>Proceeds</th>
+    <td>${{uproceeds}}</td>
+  </tr>
+  <tr>
+    <th>Cost</th>
+    <td>${{ucost}}</td>
+  </tr>
+  <tr>
+    <th>Total Purchase Price</th>
+    <td>${{upp}}</td>
+  </tr>
+  <tr>
+    <th>Buy Commission</th>
+    <td>${{ubc}}</td>
+  </tr>
+   <tr>
+    <th>Sell Commission</th>
+    <td>${{usc}}</td>
+  </tr>
+   <tr>
+    <th>Tax on Capital Gain</th>
+    <td>${{txamount}}</td>
+  </tr>
+   <tr>
+    <th>Net Profit</th>
+    <td>${{unp}}</td>
+  </tr>
+    <tr>
+    <th>Return On Investment</th>
+    <td>{{uroi}}%</td>
+  </tr>
+   <tr>
+    <th>Final Share Price To Break Even</th>
+    <td>${{ubreak}}</td>
+  </tr>
+</table>
+</body>
+</html>
